@@ -177,7 +177,7 @@
       e.preventDefault();
       var url = 'https://pay.cakto.com.br/mnzezip_790248';
 
-      try { fbq.instance('1961787600889582').track('InitiateCheckout'); } catch(err) {}
+      try { fbq('trackSingle', '1961787600889582', 'InitiateCheckout'); } catch(err) {}
 
       setTimeout(function() {
         window.location.href = url;
