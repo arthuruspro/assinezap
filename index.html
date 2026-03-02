@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assine pelo WhatsApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      color: #1a1a1a;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    /* Logo */
+    .logo {
+      margin-bottom: 40px;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    /* Headline */
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      font-weight: 400;
+      color: #555555;
+      margin-bottom: 36px;
+      line-height: 1.5;
+    }
+
+    /* Benefits */
+    .benefits {
+      list-style: none;
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .benefits li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      color: #1a1a1a;
+    }
+
+    .check {
+      color: #46bc5b;
+      font-size: 16px;
+      line-height: 1;
+      flex-shrink: 0;
+      font-weight: 600;
+    }
+
+    /* Price */
+    .price {
+      font-size: 15px;
+      color: #1a1a1a;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .price .check {
+      visibility: hidden; /* keeps alignment with list items */
+    }
+
+    .price-text {
+      font-weight: 500;
+    }
+
+    .price-text strong {
+      font-weight: 700;
+    }
+
+    /* CTA Button */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: #46bc5b;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      letter-spacing: 0.1px;
+      transition: opacity 0.15s ease;
+    }
+
+    .btn:hover { opacity: 0.88; }
+    .btn:active { opacity: 0.75; }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/arthuruspro/assinezap/main/assinezap.webp" alt="AssineZap" />
+    </div>
+
+    <!-- Headline -->
+    <h1>Assine contratos na hora pelo WhatsApp</h1>
+
+    <!-- Subtitle -->
+    <p class="subtitle">Assinatura digital com validade jurídica</p>
+
+    <!-- Benefits -->
+    <ul class="benefits">
+      <li><span class="check">✓</span> Até 100 documentos por mês</li>
+      <li><span class="check">✓</span> Envio direto pelo WhatsApp</li>
+      <li><span class="check">✓</span> Certificado c/ validade jurídica</li>
+    </ul>
+
+    <!-- Price -->
+    <div class="price">
+      <span class="check">✓</span>
+      <span class="price-text"><strong>R$49</strong> / Mês</span>
+    </div>
+
+    <!-- CTA -->
+    <button class="btn">Teste por 7 dias</button>
+
+  </div>
+</body>
+</html>
