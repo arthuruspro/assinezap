@@ -177,16 +177,12 @@
       e.preventDefault();
       var url = 'https://pay.cakto.com.br/mnzezip_790248';
 
-      // Dispara InitiateCheckout via fbq (Meta Pixel)
+      // fbq já dispara para os dois pixels inicializados (2112230319524429 e 1961787600889582)
       try { fbq('track', 'InitiateCheckout'); } catch(err) {}
-
-      // Dispara IC diretamente para cada pixel via pixel de imagem (garantido)
-      new Image().src = 'https://www.facebook.com/tr?id=2112230319524429&ev=InitiateCheckout&noscript=1';
-      new Image().src = 'https://www.facebook.com/tr?id=1961787600889582&ev=InitiateCheckout&noscript=1';
 
       setTimeout(function() {
         window.location.href = url;
-      }, 500);
+      }, 3000);
     }
   </script>
 </body>
