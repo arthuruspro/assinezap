@@ -126,6 +126,14 @@
     defer
   ></script>
 
+  <!-- Pixel da UTMify — carrega ANTES do Meta Pixel para interceptar fbq corretamente -->
+  <script>
+  window.pixelId = "698683615ce6a0f57cf14451";
+  var a = document.createElement("script");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+  </script>
+
   <!-- Meta Pixel Base -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -141,16 +149,6 @@
   fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2112230319524429&ev=PageView&noscript=1"/><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1961787600889582&ev=PageView&noscript=1"/></noscript>
-
-  <!-- Pixel da UTMify -->
-  <script>
-  window.pixelId = "698683615ce6a0f57cf14451";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-  </script>
 
 </head>
 <body>
