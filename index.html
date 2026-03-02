@@ -176,10 +176,26 @@
     </div>
 
     <!-- CTA -->
-    <a href="https://pay.cakto.com.br/mnzezip_790248" style="text-decoration:none;" onclick="event.preventDefault(); if(typeof fbq !== 'undefined'){ fbq('track', 'InitiateCheckout'); } setTimeout(function(){ window.location.href='https://pay.cakto.com.br/mnzezip_790248'; }, 500);">
+    <a href="https://pay.cakto.com.br/mnzezip_790248" style="text-decoration:none;" onclick="handleCheckout(event);">
       <button class="btn">Teste por 7 dias</button>
     </a>
 
   </div>
+
+  <script>
+    function handleCheckout(e) {
+      e.preventDefault();
+      var url = 'https://pay.cakto.com.br/mnzezip_790248';
+
+      // Dispara InitiateCheckout no Meta Pixel (capturado tb pelo pixel UTMify)
+      try { fbq('track', 'InitiateCheckout'); } catch(err) {}
+
+      // Aguarda 500ms para garantir envio dos eventos antes de redirecionar
+      setTimeout(function() {
+        window.location.href = url;
+      }, 500);
+    }
+  </script>
+
 </body>
 </html>
