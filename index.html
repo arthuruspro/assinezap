@@ -37,15 +37,7 @@
       line-height: 1.2;
       letter-spacing: -0.5px;
       color: #1a1a1a;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      font-size: 17px;
-      font-weight: 400;
-      color: #555555;
       margin-bottom: 36px;
-      line-height: 1.5;
     }
 
     /* Benefits */
@@ -84,7 +76,7 @@
     }
 
     .price .check {
-      visibility: hidden; /* keeps alignment with list items */
+      visibility: hidden;
     }
 
     .price-text {
@@ -151,9 +143,6 @@
     <!-- Headline -->
     <h1>Assine contratos na hora <span style="color:#25D366">via WhatsApp</span></h1>
 
-    <!-- Subtitle -->
-    <p class="subtitle">Assinatura digital com validade jurídica</p>
-
     <!-- Benefits -->
     <ul class="benefits">
       <li><span class="check">✓</span> Envio direto pelo WhatsApp</li>
@@ -180,7 +169,7 @@
       e.preventDefault();
       try { fbq('trackSingle', '1961787600889582', 'InitiateCheckout'); } catch(err) {}
       setTimeout(function() {
-        window.location.href = el.href; // pega o href já modificado pelo UTMify
+        window.location.href = el.href;
       }, 300);
     }
   </script>
