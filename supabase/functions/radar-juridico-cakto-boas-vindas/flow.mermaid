@@ -1,0 +1,9 @@
+flowchart TD
+    A[📥 Webhook Cakto: purchase_approved] --> B[Extrair nome, phone e CPF]
+    B --> C[Normalizar telefone com 55]
+    C --> D[Agendar Msg 1 para daqui 15 min]
+    D --> E[Agendar Msg 2 para daqui 16 min]
+    E --> F[✅ Retorna 200]
+
+    D -.->|após 15 min via cron| G[📤 Msg: Seu monitoramento está ativo ✅ + link Escavador com CPF]
+    E -.->|após 16 min via cron| H[📤 Msg: Pitch remoção processos + link pagamento R$397]

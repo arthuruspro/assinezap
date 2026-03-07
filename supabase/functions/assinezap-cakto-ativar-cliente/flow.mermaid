@@ -1,0 +1,9 @@
+flowchart TD
+    A[📥 Webhook Cakto: purchase_approved] --> B[Extrair nome e phone do payload]
+    B --> C[Normalizar telefone brasileiro]
+    C --> D{Cliente já existe no Supabase?}
+    D -->|Sim| E[PATCH: status=ativo, estado=aguardando_pdf]
+    D -->|Não| F[INSERT: novo cliente ativo, contador=0, renovação=+30d]
+    E --> G[📤 Enviar msg boas-vindas via Z-API AssineZap]
+    F --> G
+    G --> H[✅ Retorna 200]

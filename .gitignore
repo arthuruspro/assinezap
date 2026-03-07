@@ -1,0 +1,18 @@
+# Node
+node_modules/
+
+# Supabase local
+supabase/.temp/
+supabase/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.local
+*.secret
+
+# n8n workflow JSONs (contém URLs sensíveis)
+workflow-*.json

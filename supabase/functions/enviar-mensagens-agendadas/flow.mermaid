@@ -1,0 +1,15 @@
+flowchart TD
+    A[⏰ Cron a cada 1 minuto] --> B[Buscar msgs onde enviar_em <= agora E status = pendente]
+    B --> C{Tem mensagens?}
+    C -->|Não| D[Retorna processadas: 0]
+    C -->|Sim| E[Para cada mensagem:]
+    E --> F[📤 Enviar via Z-API usando instance/token da msg]
+    F --> G{Enviou com sucesso?}
+    G -->|Sim| H[Marcar status = enviada]
+    G -->|Não| I{Tentativas >= 3?}
+    I -->|Sim| J[Marcar status = erro]
+    I -->|Não| K[Incrementar tentativas]
+    H --> L[Próxima mensagem]
+    J --> L
+    K --> L
+    L --> E

@@ -1,0 +1,41 @@
+flowchart TD
+    A[📩 Msg WhatsApp recebida via Z-API] --> B{É do bot / grupo / não-callback?}
+    B -->|Sim| X[🚫 Ignorar]
+    B -->|Não| C[Normalizar phone + extrair texto]
+    C --> D{É código de aceite LI ACEITO E ASSINO?}
+
+    D -->|Não| E[👤 CAMINHO A: Mensagem de cliente]
+    E --> F[Buscar cliente no Supabase]
+    F --> G{Cliente ativo?}
+    G -->|Não| H[📤 Msg: Sua assinatura está inativa]
+    G -->|Sim| I[Verificar renovação 30 dias]
+    I --> J{Expirou?}
+    J -->|Sim| K[Zerar contador + nova data renovação]
+    J -->|Não| L[Manter contador atual]
+    K --> M{Estado do cliente?}
+    L --> M
+    M -->|aguardando_pdf| N{Enviou PDF válido?}
+    N -->|Não| O[📤 Msg: Envie em formato PDF]
+    N -->|Sim| P{Limite 100 docs?}
+    P -->|Sim| Q[📤 Msg: Limite atingido]
+    P -->|Não| R[Salvar URL doc + mudar estado]
+    R --> S[📤 Msg: Envie WhatsApp do signatário]
+    M -->|aguardando_whatsapp| T{Phone válido 10-11 dígitos?}
+    T -->|Não| U[📤 Msg: Envie no formato 11999999999]
+    T -->|Sim| V[Calcular próximo código aceite]
+    V --> W[Criar registro signatário no banco]
+    W --> Y[📤 Enviar PDF ao signatário]
+    Y --> Z[📤 Enviar botão LI ACEITO E ASSINO]
+    Z --> AA[Limpar PDF + resetar estado cliente]
+    AA --> AB[📤 Msg: Pedido enviado ao signatário]
+
+    D -->|Sim| AC[✍️ CAMINHO B: Aceite de assinatura]
+    AC --> AD[Normalizar phone signatário]
+    AD --> AE[Buscar signatário pendente no banco]
+    AE --> AF{Encontrou?}
+    AF -->|Não| X
+    AF -->|Sim| AG[Registrar timestamp_aceite]
+    AG --> AH[Gerar comprovante texto]
+    AH --> AI[📤 Enviar comprovante ao signatário]
+    AI --> AJ[📤 Enviar Seu contrato foi assinado + comprovante ao cliente]
+    AJ --> AK[🗑️ Deletar registro signatário]

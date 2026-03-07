@@ -1,0 +1,9 @@
+flowchart TD
+    A[📥 Webhook Cakto: refund / chargeback / canceled] --> B{Evento válido?}
+    B -->|Não| C[🚫 Ignorar]
+    B -->|Sim| D[Extrair nome e phone]
+    D --> E[Normalizar telefone com 55]
+    E --> F[Agendar msg feedback para daqui 5 min]
+    F --> G[✅ Retorna 200]
+
+    F -.->|após 5 min via cron| H[📤 Msg: Oi nome! O que te fez cancelar?]

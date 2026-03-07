@@ -1,0 +1,5 @@
+flowchart TD
+    A[📥 Webhook Cakto: subscription_canceled] --> B[Extrair phone do payload]
+    B --> C[Normalizar telefone brasileiro]
+    C --> D[PATCH clientes: status_cliente = inativo]
+    D --> E[✅ Retorna 200]
