@@ -10,6 +10,11 @@ import { extractCaktoCustomer } from '../_shared/cakto.ts';
 import { normalizePhoneCaktoSem55 } from '../_shared/phone.ts';
 
 serve(async (req) => {
+  // ⚠️ DESATIVADO TEMPORARIAMENTE
+  return new Response(JSON.stringify({ status: 'disabled', msg: 'AssineZap desativado temporariamente' }), {
+    status: 200, headers: { 'Content-Type': 'application/json' }
+  });
+
   if (req.method === 'OPTIONS') {
     return new Response('ok', { status: 200 });
   }

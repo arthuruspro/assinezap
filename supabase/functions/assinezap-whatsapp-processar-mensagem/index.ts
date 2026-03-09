@@ -34,6 +34,11 @@ function timestampBrasilia(): string {
 }
 
 serve(async (req) => {
+  // ⚠️ DESATIVADO TEMPORARIAMENTE
+  return new Response(JSON.stringify({ status: 'disabled', msg: 'AssineZap desativado temporariamente' }), {
+    status: 200, headers: { 'Content-Type': 'application/json' }
+  });
+
   if (req.method === 'OPTIONS') {
     return new Response('ok', { status: 200 });
   }
