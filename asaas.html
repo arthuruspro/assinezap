@@ -5,7 +5,7 @@
 <link rel="preload" href="/radar.webp" as="image" type="image/webp">
 <link rel="preload" href="/logo.webp" as="image" type="image/webp">
 <link rel="icon" type="image/png" href="/favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -124,61 +124,17 @@ footer{display:none}
 .success-steps-list li{display:flex;align-items:flex-start;gap:14px;padding:10px 0;border-bottom:1px solid var(--border-light);font-size:14px;color:var(--text-secondary);line-height:1.5}
 .success-steps-list li:last-child{border-bottom:none}
 .success-steps-list li strong{color:var(--text)}
+.input-label{font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:6px;text-align:left}
+.wpp-section{max-height:0;overflow:hidden;opacity:0;transition:max-height 0.5s ease,opacity 0.5s ease,margin 0.5s ease,padding 0.5s ease;margin-top:0;padding-top:0;border-top:0px solid transparent}
+.wpp-section.visible{max-height:280px;opacity:1;margin-top:24px;padding-top:24px;border-top:1px solid var(--border)}
 .pix-error{text-align:center;font-size:14px;color:var(--danger);margin-top:12px;display:none}
 .pix-error.visible{display:block}
 .prog-field{max-height:0;opacity:0;overflow:hidden;margin-bottom:0;transition:max-height 0.4s ease,opacity 0.35s ease,margin-bottom 0.35s ease}
-.prog-field.visible{max-height:120px;opacity:1;margin-bottom:14px}
+.prog-field.visible{max-height:100px;opacity:1;margin-bottom:14px}
 .prog-label{font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:6px;display:flex;align-items:center;gap:6px}
-.prog-input{width:100%;padding:12px 14px;font-family:var(--font-body);font-size:15px;font-weight:500;border:2px solid var(--border);border-radius:12px;outline:none;transition:all 0.25s;color:var(--text);background:var(--bg-alt)}
+.prog-input{width:100%;padding:14px 16px;font-family:var(--font-body);font-size:16px;font-weight:500;border:2px solid var(--border);border-radius:12px;outline:none;transition:all 0.25s;color:var(--text);background:var(--bg-alt)}
 .prog-input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 4px rgba(26,86,219,0.1)}
 .prog-input::placeholder{color:var(--text-dim);font-weight:400}
-/* Checkout Asaas-style */
-.ck-header{margin-bottom:31px;padding-top:4px}
-.ck-header h3{font-size:21px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3}
-.ck-header .ck-price{font-size:16px;font-weight:700;color:var(--accent)}
-.ck-header .ck-price .ck-period{font-size:13px;font-weight:400;color:var(--text-secondary)}
-.ck-section{margin-bottom:31px}
-.ck-section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:18px}
-.ck-section-title svg{width:20px;height:20px;color:var(--text-muted)}
-.ck-field{margin-bottom:20px}
-.ck-field label{display:block;font-size:13.5px;font-weight:500;color:var(--text);margin-bottom:6px}
-.ck-field input{width:100%;padding:12px 14px;font-family:var(--font-body);font-size:16px;font-weight:400;border:1px solid #d1d5db;border-radius:8px;outline:none;transition:all 0.2s;color:var(--text);background:#fff}
-.ck-field input:focus{border-color:#9ca3af;box-shadow:none}
-.ck-field input::placeholder{color:#c0c4cc}
-.ck-field input.error{border-color:var(--danger)}
-.ck-field .ck-phone-wrap.error{border-color:var(--danger)}
-.ck-field .ck-phone-wrap{display:flex;align-items:center;gap:0;border:1px solid #d1d5db;border-radius:8px;overflow:hidden;transition:all 0.2s}
-.ck-field .ck-phone-wrap:focus-within{border-color:#9ca3af;box-shadow:none}
-.ck-field .ck-phone-prefix{display:flex;align-items:center;gap:4px;padding:12px 12px 12px 14px;font-size:15px;color:var(--text-secondary);background:#fafafa;border-right:1px solid var(--border);white-space:nowrap;flex-shrink:0}
-.ck-field .ck-phone-prefix span{font-size:16px}
-.ck-field .ck-phone-wrap input{border:none;border-radius:0;padding:12px 14px;box-shadow:none}
-.ck-field .ck-phone-wrap input:focus{box-shadow:none}
-.ck-pay-methods{display:flex;gap:10px;margin-bottom:21px}
-.ck-pay-method{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:18px 10px;cursor:pointer;border:1px solid #d1d5db;border-radius:12px;transition:all 0.2s;background:#f5f7fa}
-.ck-pay-method.active{border-color:#1e293b;background:#1e293b;border-radius:12px}
-.ck-pay-method.active span{color:#fff}
-.ck-pay-method svg,.ck-pay-method img{width:28px;height:28px}
-.ck-pay-method span{font-size:12px;font-weight:600;color:var(--text-secondary);text-align:center}
-.ck-pix-benefits{border:2px dashed #16a34a;border-radius:12px;padding:16px 18px;margin-bottom:25px}
-.ck-pix-benefits li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text-secondary);line-height:1.4;margin-bottom:10px;list-style:none}
-.ck-pix-benefits li:last-child{margin-bottom:0}
-.ck-pix-benefits li .ck-check{width:18px;height:18px;border-radius:50%;background:#16a34a;color:#fff;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.ck-summary{border-top:1px solid #e5e7eb;padding-top:20px;margin-bottom:24px}
-.ck-summary-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:14px}
-.ck-summary-row{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--text-secondary);margin-bottom:12px}
-.ck-summary-total{display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:700;color:var(--text);padding-top:12px;border-top:1px solid #e5e7eb}
-.ck-card-fields{display:none;margin-bottom:20px}
-.ck-card-fields.visible{display:block}
-.ck-card-row{display:flex;gap:12px}
-.ck-card-row .ck-field{flex:1}
-.ck-submit{width:100%;padding:18px;background:var(--accent);color:#fff;font-family:var(--font-body);font-size:16px;font-weight:700;border:none;border-radius:14px;cursor:pointer;transition:all 0.2s}
-.ck-submit:hover{background:var(--accent-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,86,219,0.3)}
-.ck-submit:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none}
-/* Fullscreen mode for Step 7 */
-.cpf-modal.fullscreen{background:#f0f2f5;padding:0}
-.cpf-modal.fullscreen .cpf-modal-box{max-width:100%;width:100%;max-height:100vh;height:100%;border-radius:16px 16px 0 0;box-shadow:0 -2px 20px rgba(0,0,0,0.06);padding:28px 22px;transform:none;margin-top:6px;background:#fff;overflow-y:auto}
-.cpf-modal.fullscreen .cpf-modal-close{display:none}
-@media(min-width:601px){.cpf-modal.fullscreen .cpf-modal-box{max-width:480px;margin:6px auto 0;border-radius:16px}}
 @media(max-width:600px){
   .cpf-modal-box{padding:28px 20px;border-radius:20px;max-height:95vh}
   .cpf-step h2{font-size:20px}
@@ -239,11 +195,56 @@ footer{display:none}
 <div class="cpf-step" id="cpfStep5">
 <div class="cpf-result-status danger"><div class="status-dot"></div> Este CPF não possui monitoramento ativo. </div>
 <p class="cpf-result-msg">Se alguém te processar, você descobrirá tarde demais — com <strong style="color:#df0101">conta bloqueada, nome sujo, multas ou até risco de prisão</strong>.</p>
-<button class="cpf-result-btn" onclick="showStep(6)" style="background:var(--danger);">Ver como se proteger</button>
+<button class="cpf-result-btn" onclick="showStep(6)" style="background:var(--danger);">Teste por 7 dias</button>
 </div>
 
-<!-- STEP 6: Preço + botão "Teste por 7 dias" -->
+<!-- STEP 6: Formulário progressivo (step separado, limpo) -->
 <div class="cpf-step" id="cpfStep6">
+<div class="cpf-step-icon">&#128100;</div>
+<h2>Precisamos de alguns dados</h2>
+<p class="cpf-desc">Para ativar seu monitoramento</p>
+
+  <!-- Campo 1: Nome (sempre visível) -->
+  <div style="margin-bottom:14px;" id="progNameGroup">
+    <label class="prog-label">Qual o seu nome?</label>
+    <input type="text" class="prog-input" id="progName" placeholder="Como podemos te chamar?" autocomplete="given-name">
+  </div>
+
+  <!-- Campo 2: Email -->
+  <div class="prog-field" id="progEmailGroup">
+    <label class="prog-label">Seu melhor e-mail</label>
+    <input type="email" class="prog-input" id="progEmail" placeholder="seuemail@exemplo.com" autocomplete="email">
+  </div>
+
+  <!-- Campo 3: WhatsApp -->
+  <div class="prog-field" id="progWppGroup">
+    <label class="prog-label"><svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Qual o seu WhatsApp?</label>
+    <input type="text" class="prog-input" id="wppInput" placeholder="(00) 00000-0000" maxlength="15" inputmode="numeric" autocomplete="off">
+    <p class="cpf-error-msg" id="wppError">Digite um WhatsApp válido com DDD</p>
+  </div>
+
+  <!-- Campo 4: Área de atuação -->
+  <div class="prog-field" id="progAreaGroup">
+    <label class="prog-label">Qual a sua área de atuação?</label>
+    <input type="text" class="prog-input" id="progArea" placeholder="Ex: advocacia, contabilidade, comércio..." autocomplete="off">
+  </div>
+
+  <!-- Campo 5: Confirme CPF (micro-commitment, não salva) -->
+  <div class="prog-field" id="progCpfConfirmGroup">
+    <label class="prog-label">Confirme seu CPF</label>
+    <input type="text" class="prog-input" id="progCpfConfirm" placeholder="000.000.000-00" maxlength="14" inputmode="numeric" autocomplete="off">
+  </div>
+
+  <!-- Botão continuar (aparece após CPF confirmado) -->
+  <div class="prog-field" id="progContinueGroup">
+    <button class="cpf-submit" onclick="showStep(7)">Continuar</button>
+  </div>
+
+  <div class="cpf-privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="m7 11V7a5 5 0 0 1 10 0v4"/></svg> Seus dados estão protegidos</div>
+</div>
+
+<!-- STEP 7: Preço + botão checkout -->
+<div class="cpf-step" id="cpfStep7">
 <div class="cpf-solution-title" style="margin-top:24px;">Ative o<br>Monitoramento Processual 24h</div>
 <div class="cpf-result-solution">
   <div class="cpf-result-price" style="margin-bottom:20px;">
@@ -254,102 +255,13 @@ footer{display:none}
     <li>Alerta imediato no WhatsApp</li>
     <li>Todo tipo de processo</li>
   </ul>
-  <button class="cpf-result-btn" onclick="showStep(7)" style="margin-top:20px;">Teste por 7 dias</button>
-</div>
-</div>
-
-<!-- STEP 7: Checkout estilo Asaas -->
-<div class="cpf-step" id="cpfStep7">
-
-  <!-- Header do produto -->
-  <div class="ck-header">
-    <h3>Monitoramento Processual 24h</h3>
-    <div class="ck-price">R$ 147,00 <span class="ck-period">/ mês</span></div>
-  </div>
-
-  <!-- Seus dados -->
-  <div class="ck-section">
-    <div class="ck-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-      Seus dados
-    </div>
-    <div class="ck-field">
-      <label>Nome completo</label>
-      <input type="text" id="ckNome" placeholder="Preencha seu nome" autocomplete="name">
-    </div>
-    <div class="ck-field">
-      <label>Email</label>
-      <input type="email" id="ckEmail" placeholder="Preencha seu email" autocomplete="email">
-    </div>
-    <div class="ck-field">
-      <label>CPF ou CNPJ a ser monitorado</label>
-      <input type="text" id="ckCpfCnpj" placeholder="Preencha seu CPF ou CNPJ" maxlength="18" inputmode="numeric" autocomplete="off">
-    </div>
-    <div class="ck-field">
-      <label>Celular</label>
-      <div class="ck-phone-wrap">
-        <div class="ck-phone-prefix"><span>🇧🇷</span>▾ +55</div>
-        <input type="text" id="ckCelular" placeholder="" maxlength="15" inputmode="numeric" autocomplete="tel">
-      </div>
-    </div>
-  </div>
-
-  <!-- Pagamento -->
-  <div class="ck-section">
-    <div class="ck-section-title">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-      Pagamento
-    </div>
-
-    <div class="ck-pay-methods">
-      <div class="ck-pay-method" id="ckMethodCard" onclick="selectPayMethod('card')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-        <span>Cartão de Crédito</span>
-      </div>
-      <div class="ck-pay-method active" id="ckMethodPix" onclick="selectPayMethod('pix')">
-        <svg width="32" height="32" viewBox="0 0 512 512" fill="#ffffff"><path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C256.1 224.4 247.9 224.5 242.4 218.9L165.7 142.2C151.5 127.1 132.6 120.2 112.6 120.2H103.3L200.7 22.76C231.1-7.586 280.3-7.586 310.6 22.76L407.8 119.9H392.6C372.6 119.9 353.7 127.7 339.5 141.9L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 252.5 245.6C261.9 245.6 271.3 241.1 278.5 234.8L355.5 157.8C365.3 148.1 378.8 142.5 392.6 142.5H430.3L488.6 200.8C518.9 231.1 518.9 280.3 488.6 310.6L430.3 368.9H392.6C378.8 368.9 365.3 363.3 355.5 353.5L278.5 276.5C264.6 262.6 240.3 262.6 226.4 276.6L149.7 353.2C139.1 363 126.4 368.6 112.6 368.6H80.78L22.76 310.6C-7.586 280.3-7.586 231.1 22.76 200.8L80.78 142.7H112.6z"/></svg>
-        <span>Pix Automático</span>
-      </div>
-    </div>
-
-    <!-- Campos do cartão (ocultos por padrão) -->
-    <div class="ck-card-fields" id="ckCardFields">
-      <div class="ck-field">
-        <label>Número do cartão</label>
-        <input type="text" id="ckCardNumber" placeholder="0000 0000 0000 0000" maxlength="19" inputmode="numeric" autocomplete="cc-number">
-      </div>
-      <div class="ck-card-row">
-        <div class="ck-field">
-          <label>Validade</label>
-          <input type="text" id="ckCardExpiry" placeholder="MM/AA" maxlength="5" inputmode="numeric" autocomplete="cc-exp">
-        </div>
-        <div class="ck-field">
-          <label>CVV</label>
-          <input type="text" id="ckCardCvv" placeholder="000" maxlength="4" inputmode="numeric" autocomplete="cc-csc">
-        </div>
-      </div>
-    </div>
-
-    <!-- Benefits do PIX (visíveis por padrão) -->
-    <ul class="ck-pix-benefits" id="ckPixBenefits">
-      <li><span class="ck-check">✓</span> Liberação imediata</li>
-      <li><span class="ck-check">✓</span> Assinatura sempre em dia</li>
-      <li><span class="ck-check">✓</span> Com o Pix Automático, as renovações são feitas de forma recorrente, sem preocupação</li>
-      <li><span class="ck-check">✓</span> Autorize uma vez o pagamento no app do seu banco e os próximos a gente cuida para você</li>
-    </ul>
-  </div>
-
-  <!-- Resumo do pedido -->
-  <div class="ck-summary">
-    <div class="ck-summary-title">Resumo do pedido</div>
-    <div class="ck-summary-row"><span>Monitoramento Processual 24h</span><span>R$ 147,00</span></div>
-    <div class="ck-summary-total"><span>Total</span><span>R$ 147,00</span></div>
-  </div>
-
-  <button class="ck-submit" id="checkoutBtn" onclick="handleCheckout()">Pagar com Pix Automático</button>
+  <button id="checkoutBtn" class="cpf-result-btn" onclick="handleCheckout()" style="margin-top:20px;">Confirmar e Pagar</button>
   <p class="pix-error" id="pixError"></p>
-  <div style="height:60px"></div>
-
+  <div class="cpf-result-guarantees" style="margin-top:12px;">
+    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Dados protegidos</span>
+    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Cancele quando quiser</span>
+  </div>
+</div>
 </div>
 
 <!-- STEP 8: QR Code PIX + polling -->
@@ -387,27 +299,16 @@ footer{display:none}
 const SUPABASE_URL = 'https://tppswustlduttskozhkk.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwcHN3dXN0bGR1dHRza296aGtrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MjExMzIsImV4cCI6MjA4ODA5NzEzMn0.5IjWnMnZwJ-pmpPr0I3hxYZrfR8q_9vk0jH7DYTArqA';
 
-// ===== TRACKING HELPERS =====
-function getCookie(name) {
-  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-  return match ? decodeURIComponent(match[2]) : '';
-}
-function generateEventId() {
-  return 'eid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 9);
-}
-function getTrackingData() {
-  return {
-    fbp: getCookie('_fbp'),
-    fbc: getCookie('_fbc') || (new URLSearchParams(window.location.search).get('fbclid') ? 'fb.1.' + Date.now() + '.' + new URLSearchParams(window.location.search).get('fbclid') : ''),
-    event_source_url: window.location.href,
-    user_agent: navigator.userAgent,
-  };
-}
-
 // ===== ESTADO =====
 const cpfModal = document.getElementById('cpfModal');
 const cpfInput = document.getElementById('cpfInput');
+const wppInput = document.getElementById('wppInput');
 const cpfError = document.getElementById('cpfError');
+const wppError = document.getElementById('wppError');
+const progName = document.getElementById('progName');
+const progEmail = document.getElementById('progEmail');
+const progArea = document.getElementById('progArea');
+const progCpfConfirm = document.getElementById('progCpfConfirm');
 let rawCpf = '';
 let rawWpp = '';
 let currentAuthId = '';
@@ -415,7 +316,6 @@ let pixPayload = '';
 let pollInterval = null;
 let pollCount = 0;
 const MAX_POLLS = 360; // 30 minutos
-let selectedPayMethod = 'pix'; // 'pix' ou 'card'
 
 // ===== MODAL =====
 function openCpfModal() { cpfModal.classList.add('active'); document.body.style.overflow = 'hidden'; showStep(1); }
@@ -427,17 +327,6 @@ function showStep(n) {
   document.querySelectorAll('.cpf-step').forEach(s => s.classList.remove('active'));
   document.getElementById('cpfStep' + n).classList.add('active');
   document.querySelector('.cpf-modal-box').scrollTop = 0;
-  // Fullscreen para Step 7 e 8
-  if (n === 7 || n === 8) { cpfModal.classList.add('fullscreen'); } else { cpfModal.classList.remove('fullscreen'); }
-  // Pre-preencher CPF no checkout
-  if (n === 7 && rawCpf) {
-    const el = document.getElementById('ckCpfCnpj');
-    if (el && !el.value) {
-      let v = rawCpf;
-      if (v.length === 11) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
-      el.value = v;
-    }
-  }
 }
 
 // ===== VALIDAÇÃO CPF =====
@@ -467,29 +356,88 @@ cpfInput.addEventListener('input', e => {
 
 cpfInput.addEventListener('keydown', e => { if (e.key === 'Enter') startAnalysis(); });
 
-// Máscara CPF/CNPJ do checkout
-document.getElementById('ckCpfCnpj').addEventListener('input', e => {
-  let v = e.target.value.replace(/\D/g, '');
-  if (v.length <= 11) {
-    v = v.slice(0, 11);
-    if (v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
-    else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
-    else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
-  } else {
-    v = v.slice(0, 14);
-    v = v.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{0,2})/, '$1.$2.$3/$4-$5');
-  }
-  e.target.value = v;
-});
-
-// Máscara Celular do checkout — mostra ( desde o primeiro dígito
-document.getElementById('ckCelular').addEventListener('input', e => {
+// Máscara WhatsApp
+wppInput.addEventListener('input', e => {
   let v = e.target.value.replace(/\D/g, '').slice(0, 11);
   if (v.length > 6) v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
   else if (v.length > 2) v = v.replace(/(\d{2})(\d{0,5})/, '($1) $2');
-  else if (v.length >= 1) v = '(' + v;
   e.target.value = v;
+  wppError.classList.remove('visible');
+  wppInput.classList.remove('error');
+  updateProgressive();
 });
+
+// Máscara CPF confirmação
+progCpfConfirm.addEventListener('input', e => {
+  let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+  if (v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+  else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+  else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+  e.target.value = v;
+  updateProgressive();
+});
+
+// Progressive form listeners
+progName.addEventListener('input', updateProgressive);
+progEmail.addEventListener('input', updateProgressive);
+progArea.addEventListener('input', updateProgressive);
+
+function updateProgressive() {
+  var name = progName.value.trim();
+  var email = progEmail.value.trim();
+  var wpp = wppInput.value.replace(/\D/g, '');
+  var area = progArea.value.trim();
+  var cpfConf = progCpfConfirm.value.replace(/\D/g, '');
+
+  // Nome >= 3 chars → show email
+  if (name.length >= 3) {
+    document.getElementById('progEmailGroup').classList.add('visible');
+  } else {
+    document.getElementById('progEmailGroup').classList.remove('visible');
+    document.getElementById('progWppGroup').classList.remove('visible');
+    document.getElementById('progAreaGroup').classList.remove('visible');
+    document.getElementById('progCpfConfirmGroup').classList.remove('visible');
+    document.getElementById('progContinueGroup').classList.remove('visible');
+    return;
+  }
+
+  // Email has @ and >= 5 chars → show WhatsApp
+  if (email.includes('@') && email.length >= 5) {
+    document.getElementById('progWppGroup').classList.add('visible');
+  } else {
+    document.getElementById('progWppGroup').classList.remove('visible');
+    document.getElementById('progAreaGroup').classList.remove('visible');
+    document.getElementById('progCpfConfirmGroup').classList.remove('visible');
+    document.getElementById('progContinueGroup').classList.remove('visible');
+    return;
+  }
+
+  // WhatsApp >= 10 digits → show area
+  if (wpp.length >= 10) {
+    document.getElementById('progAreaGroup').classList.add('visible');
+  } else {
+    document.getElementById('progAreaGroup').classList.remove('visible');
+    document.getElementById('progCpfConfirmGroup').classList.remove('visible');
+    document.getElementById('progContinueGroup').classList.remove('visible');
+    return;
+  }
+
+  // Area >= 3 chars → show CPF confirm
+  if (area.length >= 3) {
+    document.getElementById('progCpfConfirmGroup').classList.add('visible');
+  } else {
+    document.getElementById('progCpfConfirmGroup').classList.remove('visible');
+    document.getElementById('progContinueGroup').classList.remove('visible');
+    return;
+  }
+
+  // CPF confirmed (11 digits) → show continue button
+  if (cpfConf.length >= 11) {
+    document.getElementById('progContinueGroup').classList.add('visible');
+  } else {
+    document.getElementById('progContinueGroup').classList.remove('visible');
+  }
+}
 
 // ===== ANÁLISE =====
 function startAnalysis() {
@@ -524,105 +472,29 @@ function startAnalysis() {
   setTimeout(() => { showStep(5); }, 7000);
 }
 
-// ===== TOGGLE CARTÃO / PIX =====
-function selectPayMethod(method) {
-  selectedPayMethod = method;
-  const cardBtn = document.getElementById('ckMethodCard');
-  const pixBtn = document.getElementById('ckMethodPix');
-  const cardFields = document.getElementById('ckCardFields');
-  const pixBenefits = document.getElementById('ckPixBenefits');
-  const submitBtn = document.getElementById('checkoutBtn');
-  if (method === 'card') {
-    cardBtn.classList.add('active');
-    pixBtn.classList.remove('active');
-    cardFields.classList.add('visible');
-    pixBenefits.style.display = 'none';
-    submitBtn.textContent = 'Assinar com Cartão de Crédito';
-    // Fix SVG colors
-    cardBtn.querySelector('svg').setAttribute('stroke', '#ffffff');
-    pixBtn.querySelector('svg').setAttribute('fill', '#6b7280');
-  } else {
-    pixBtn.classList.add('active');
-    cardBtn.classList.remove('active');
-    cardFields.classList.remove('visible');
-    pixBenefits.style.display = '';
-    submitBtn.textContent = 'Pagar com Pix Automático';
-    pixBtn.querySelector('svg').setAttribute('fill', '#ffffff');
-    cardBtn.querySelector('svg').setAttribute('stroke', '#6b7280');
-  }
-}
-
-// ===== MÁSCARAS CARTÃO =====
-document.getElementById('ckCardNumber')?.addEventListener('input', function(e) {
-  let v = e.target.value.replace(/\D/g, '').slice(0, 16);
-  v = v.replace(/(\d{4})(?=\d)/g, '$1 ');
-  e.target.value = v;
-});
-document.getElementById('ckCardExpiry')?.addEventListener('input', function(e) {
-  let v = e.target.value.replace(/\D/g, '').slice(0, 4);
-  if (v.length > 2) v = v.slice(0, 2) + '/' + v.slice(2);
-  e.target.value = v;
-});
-document.getElementById('ckCardCvv')?.addEventListener('input', function(e) {
-  e.target.value = e.target.value.replace(/\D/g, '').slice(0, 4);
-});
-
-// Remove erro ao digitar nos campos do cartão
-['ckCardNumber','ckCardExpiry','ckCardCvv'].forEach(id => {
-  document.getElementById(id)?.addEventListener('input', function(){ this.classList.remove('error'); document.getElementById('pixError').classList.remove('visible'); });
-});
-
-// ===== CHECKOUT =====
-// Remove erro ao digitar
-['ckNome','ckEmail','ckCpfCnpj'].forEach(id => {
-  document.getElementById(id)?.addEventListener('input', function(){ this.classList.remove('error'); document.getElementById('pixError').classList.remove('visible'); });
-});
-document.getElementById('ckCelular')?.addEventListener('input', function(){ this.closest('.ck-phone-wrap')?.classList.remove('error'); document.getElementById('pixError').classList.remove('visible'); });
-
+// ===== CHECKOUT (gerar PIX) =====
 async function handleCheckout() {
   const btn = document.getElementById('checkoutBtn');
   const errorEl = document.getElementById('pixError');
   errorEl.classList.remove('visible');
 
-  // Pegar valores dos campos
-  const nome = document.getElementById('ckNome').value.trim();
-  const email = document.getElementById('ckEmail').value.trim();
-  const cpfCnpj = document.getElementById('ckCpfCnpj').value.replace(/\D/g, '');
-  const celular = document.getElementById('ckCelular').value.replace(/\D/g, '');
-
-  // Validações
-  if (!nome) { document.getElementById('ckNome').classList.add('error'); errorEl.textContent = 'Preencha seu nome'; errorEl.classList.add('visible'); return; }
-  document.getElementById('ckNome').classList.remove('error');
-  if (!email || !email.includes('@')) { document.getElementById('ckEmail').classList.add('error'); errorEl.textContent = 'Preencha um email válido'; errorEl.classList.add('visible'); return; }
-  document.getElementById('ckEmail').classList.remove('error');
-  if (cpfCnpj.length < 11) { document.getElementById('ckCpfCnpj').classList.add('error'); errorEl.textContent = 'Preencha seu CPF/CNPJ'; errorEl.classList.add('visible'); return; }
-  document.getElementById('ckCpfCnpj').classList.remove('error');
-  if (celular.length < 10) { document.getElementById('ckCelular').closest('.ck-phone-wrap')?.classList.add('error'); errorEl.textContent = 'Preencha seu celular'; errorEl.classList.add('visible'); return; }
-
-  // Usar CPF do checkout ou o digitado no Step 1
-  rawWpp = celular;
-  if (cpfCnpj.length >= 11) rawCpf = cpfCnpj;
-
-  // Validações extras para cartão
-  if (selectedPayMethod === 'card') {
-    const cardNum = document.getElementById('ckCardNumber').value.replace(/\D/g, '');
-    const cardExp = document.getElementById('ckCardExpiry').value;
-    const cardCvv = document.getElementById('ckCardCvv').value.replace(/\D/g, '');
-
-    if (cardNum.length < 13) { document.getElementById('ckCardNumber').classList.add('error'); errorEl.textContent = 'Número do cartão inválido'; errorEl.classList.add('visible'); return; }
-    if (!cardExp || cardExp.length < 5) { document.getElementById('ckCardExpiry').classList.add('error'); errorEl.textContent = 'Validade inválida'; errorEl.classList.add('visible'); return; }
-    if (cardCvv.length < 3) { document.getElementById('ckCardCvv').classList.add('error'); errorEl.textContent = 'CVV inválido'; errorEl.classList.add('visible'); return; }
+  // Validar WhatsApp
+  rawWpp = wppInput.value.replace(/\D/g, '');
+  if (rawWpp.length < 10 || rawWpp.length > 11) {
+    wppInput.classList.add('error');
+    wppError.classList.add('visible');
+    return;
   }
 
-  // Gerar event_ids e tracking
-  const tracking = getTrackingData();
-  const eventIdIC = generateEventId();
-  const eventIdPurchase = generateEventId();
-
-  // InitiateCheckout com event_id para deduplicação
-  if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', { value: 147, currency: 'BRL' }, { eventID: eventIdIC });
+  if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', { value: 147, currency: 'BRL' });
 
   btn.disabled = true;
+  btn.textContent = 'Gerando PIX...';
+
+  // Coletar dados do formulário progressivo
+  const leadName = progName.value.trim();
+  const leadEmail = progEmail.value.trim();
+  const leadArea = progArea.value.trim();
 
   // Coletar UTMs
   const urlParams = new URLSearchParams(window.location.search);
@@ -631,113 +503,37 @@ async function handleCheckout() {
     if (urlParams.get(k)) utmData[k] = urlParams.get(k);
   });
 
-  if (selectedPayMethod === 'card') {
-    // === FLUXO CARTÃO ===
-    btn.textContent = 'Processando...';
-    const expParts = document.getElementById('ckCardExpiry').value.split('/');
+  try {
+    const res = await fetch(SUPABASE_URL + '/functions/v1/radar-juridico-asaas-gerar-pix', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'apikey': SUPABASE_ANON_KEY,
+      },
+      body: JSON.stringify({
+        cpf: rawCpf,
+        whatsapp: rawWpp,
+        nome: leadName,
+        email: leadEmail,
+        area_atuacao: leadArea,
+        utm: Object.keys(utmData).length > 0 ? utmData : undefined
+      }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Erro ao gerar PIX');
 
-    try {
-      const res = await fetch(SUPABASE_URL + '/functions/v1/radar-juridico-asaas-criar-assinatura-cartao', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-          'apikey': SUPABASE_ANON_KEY,
-        },
-        body: JSON.stringify({
-          cpf: rawCpf,
-          whatsapp: rawWpp,
-          nome: nome,
-          email: email,
-          utm: Object.keys(utmData).length > 0 ? utmData : undefined,
-          creditCard: {
-            holderName: nome,
-            number: document.getElementById('ckCardNumber').value.replace(/\D/g, ''),
-            expiryMonth: expParts[0],
-            expiryYear: expParts[1],
-            ccv: document.getElementById('ckCardCvv').value.replace(/\D/g, ''),
-          },
-          postalCode: '01001000',
-          addressNumber: '1',
-          fbp: tracking.fbp,
-          fbc: tracking.fbc,
-          event_id_ic: eventIdIC,
-          event_id_purchase: eventIdPurchase,
-          event_source_url: tracking.event_source_url,
-          user_agent: tracking.user_agent,
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Erro ao processar cartão');
+    document.getElementById('qrCodeImg').src = 'data:image/png;base64,' + data.qrCodeImage;
+    pixPayload = data.qrCodeText;
+    currentAuthId = data.authorizationId;
 
-      // Sucesso! Conversion tracking com event_id para deduplicação
-      if (typeof fbq !== 'undefined') fbq('track', 'Purchase', { value: 147, currency: 'BRL' }, { eventID: eventIdPurchase });
-      if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-11225982551/purchase', value: 147, currency: 'BRL' });
-
-      // Mostrar Step 8 adaptado (sucesso cartão)
-      showStep(8);
-      document.querySelector('#cpfStep8 h2').textContent = 'Assinatura ativada!';
-      document.querySelector('#cpfStep8 .cpf-desc').textContent = 'Seu cartão foi aprovado com sucesso.';
-      document.querySelector('.qr-wrap').style.display = 'none';
-      document.querySelector('.success-steps').style.display = 'none';
-      document.getElementById('pixWaiting').innerHTML = '<span style="color:var(--success);font-weight:700">✅ Pagamento confirmado! Redirecionando...</span>';
-      setTimeout(() => { window.location.href = 'https://radar-juridico.com/remocao'; }, 2000);
-
-    } catch (err) {
-      btn.disabled = false;
-      btn.textContent = 'Assinar com Cartão de Crédito';
-      errorEl.textContent = err.message || 'Erro ao processar cartão. Tente novamente.';
-      errorEl.classList.add('visible');
-    }
-  } else {
-    // === FLUXO PIX (original) ===
-    btn.textContent = 'Gerando PIX...';
-
-    try {
-      const res = await fetch(SUPABASE_URL + '/functions/v1/radar-juridico-asaas-gerar-pix', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-          'apikey': SUPABASE_ANON_KEY,
-        },
-        body: JSON.stringify({
-          cpf: rawCpf,
-          whatsapp: rawWpp,
-          nome: nome,
-          email: email,
-          utm: Object.keys(utmData).length > 0 ? utmData : undefined,
-          fbp: tracking.fbp,
-          fbc: tracking.fbc,
-          event_id: eventIdIC,
-          event_source_url: tracking.event_source_url,
-          user_agent: tracking.user_agent,
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Erro ao gerar PIX');
-
-      document.getElementById('qrCodeImg').src = 'data:image/png;base64,' + data.qrCodeImage;
-      pixPayload = data.qrCodeText;
-      currentAuthId = data.authorizationId;
-      // Salvar eventIdPurchase para usar no polling
-      window._pixEventIdPurchase = eventIdPurchase;
-
-      // Restaurar Step 8 pra modo PIX
-      document.querySelector('#cpfStep8 h2').textContent = 'Quase lá!';
-      document.querySelector('#cpfStep8 .cpf-desc').textContent = 'Escaneie o QR Code com o app do seu banco';
-      document.querySelector('.qr-wrap').style.display = '';
-      document.querySelector('.success-steps').style.display = '';
-      document.getElementById('pixWaiting').innerHTML = 'Aguardando pagamento<div class="dot-pulse"><span></span><span></span><span></span></div>';
-
-      showStep(8);
-      startPaymentPolling();
-    } catch (err) {
-      btn.disabled = false;
-      btn.textContent = 'Pagar com Pix Automático';
-      errorEl.textContent = err.message || 'Erro ao gerar PIX. Tente novamente.';
-      errorEl.classList.add('visible');
-    }
+    showStep(8);
+    startPaymentPolling();
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Confirmar e Pagar';
+    errorEl.textContent = err.message || 'Erro ao gerar PIX. Tente novamente.';
+    errorEl.classList.add('visible');
   }
 }
 
@@ -772,12 +568,12 @@ function startPaymentPolling() {
           'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
           'apikey': SUPABASE_ANON_KEY,
         },
-        body: JSON.stringify({ authorizationId: currentAuthId, event_id: window._pixEventIdPurchase }),
+        body: JSON.stringify({ authorizationId: currentAuthId }),
       });
       const data = await res.json();
       if (data.active) {
         clearInterval(pollInterval);
-        if (typeof fbq !== 'undefined') fbq('track', 'Purchase', { value: 147, currency: 'BRL' }, { eventID: window._pixEventIdPurchase });
+        if (typeof fbq !== 'undefined') fbq('track', 'Purchase', { value: 147, currency: 'BRL' });
         if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-11225982551/purchase', value: 147, currency: 'BRL' });
         document.getElementById('pixWaiting').innerHTML = '<span style="color:var(--success);font-weight:700">\u2705 Pagamento confirmado! Redirecionando...</span>';
         setTimeout(() => { window.location.href = 'https://radar-juridico.com/remocao'; }, 2000);
