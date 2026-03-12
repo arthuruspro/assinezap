@@ -1,191 +1,792 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <title>Assine pelo WhatsApp</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<link rel="preload" href="/radar.webp" as="image" type="image/webp">
+<link rel="preload" href="/logo.webp" as="image" type="image/webp">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    html, body {
-      height: 100%;
-      background: #ffffff;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #1a1a1a;
-      -webkit-font-smoothing: antialiased;
-    }
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2112230319524429');
+fbq('init', '1961787600889582');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2112230319524429&ev=PageView&noscript=1"/><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1961787600889582&ev=PageView&noscript=1"/></noscript>
 
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 40px 24px;
-    }
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11225982551"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11225982551');
+</script>
 
-    .card {
-      width: 100%;
-      max-width: 420px;
-    }
-
-
-    h1 {
-      font-size: 41px;
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -1px;
-      color: #1a1a1a;
-      margin-bottom: 24px;
-      margin-top: 12px;
-    }
-
-    /* Mockup */
-    .mockup {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .mockup img {
-      width: 360px;
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Benefits */
-    .benefits {
-      list-style: none;
-      margin-bottom: 28px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .benefits li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 16px;
-      color: #1a1a1a;
-    }
-
-    .check {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      width: 22px;
-      height: 22px;
-    }
-
-    /* Price */
-    .price {
-      font-size: 27px;
-      color: #1a1a1a;
-      margin-bottom: 32px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .price .check {
-      visibility: hidden;
-    }
-
-    .price-text {
-      font-weight: 500;
-    }
-
-    .price-text strong {
-      font-weight: 800;
-      font-size: 34px;
-    }
-
-    /* CTA Button */
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      background: #1BAB62;
-      color: #ffffff;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      border-radius: 14px;
-      cursor: pointer;
-      text-align: center;
-      letter-spacing: 0.1px;
-      transition: opacity 0.15s ease;
-    }
-
-    .btn:hover { opacity: 0.88; }
-    .btn:active { opacity: 0.75; }
-
-    @media (max-width: 480px) {
-      h1 { font-size: 34px; }
-    }
-  </style>
-  <!-- Passador de UTM da UTMify -->
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
-
-  <!-- Meta Pixel Base -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2112230319524429');
-  fbq('init', '1961787600889582');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2112230319524429&ev=PageView&noscript=1"/><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1961787600889582&ev=PageView&noscript=1"/></noscript>
-
+<title>Radar Jurídico — Monitoramento de Processos pelo CPF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--bg-alt:#f5f7fb;--accent:#1a56db;--accent-dark:#1545b5;--accent-light:#e8effc;--danger:#dc2626;--danger-light:#fef2f2;--success:#16a34a;--success-light:#dcfce7;--text:#111827;--text-secondary:#374151;--text-muted:#6b7280;--text-dim:#9ca3af;--border:#e5e7eb;--border-light:#f3f4f6;--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--font-display:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow-x:hidden}
+body{font-family:var(--font-body);background:#fff;display:flex;flex-direction:column;align-items:center;min-height:100vh;overflow-x:hidden}
+nav{width:100%;padding:16px 24px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border)}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 10px 24px;gap:24px;text-align:center}
+.hero img{width:100%;max-width:100%;border-radius:12px;display:block}
+.cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:20px 48px;background:var(--accent);color:#fff;font-family:var(--font-body);font-size:19px;font-weight:700;border:none;border-radius:16px;cursor:pointer;text-decoration:none;transition:all 0.2s;width:100%;max-width:400px}
+.cta-btn:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 32px rgba(26,86,219,0.3)}
+.cta-sub{font-size:13px;color:var(--text-muted);margin-top:8px}
+footer{display:none}
+.cpf-modal{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.6);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity 0.35s ease;padding:20px}
+.cpf-modal.active{opacity:1;pointer-events:auto}
+.cpf-modal-box{background:#ffffff;border-radius:24px;max-width:520px;width:100%;padding:48px 40px;position:relative;box-shadow:0 24px 80px rgba(0,0,0,0.2);transform:translateY(20px) scale(0.97);transition:transform 0.35s ease;overflow-y:auto;max-height:92vh}
+.cpf-modal.active .cpf-modal-box{transform:translateY(0) scale(1)}
+.cpf-modal-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--text-muted);transition:all 0.2s;z-index:2}
+.cpf-modal-close:hover{background:var(--bg-alt);color:var(--text)}
+.cpf-step{display:none}.cpf-step.active{display:block}
+.cpf-step-icon{width:64px;height:64px;border-radius:16px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px}
+.cpf-step h2{font-family:var(--font-display);font-size:24px;font-weight:800;text-align:center;margin-bottom:8px;color:var(--text)}
+.cpf-step .cpf-desc{text-align:center;font-size:16px;color:var(--text-secondary);margin-bottom:32px;line-height:1.6}
+.cpf-input-wrap{position:relative;margin-bottom:16px}
+.cpf-input{width:100%;padding:18px 20px;font-family:var(--font-body);font-size:20px;font-weight:600;letter-spacing:0.08em;text-align:center;border:2px solid var(--border);border-radius:14px;outline:none;transition:all 0.25s;color:var(--text);background:var(--bg-alt)}
+.cpf-input::placeholder{color:var(--text-dim);font-weight:400;letter-spacing:0.02em}
+.cpf-input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 4px rgba(26,86,219,0.1)}
+.cpf-input.error{border-color:var(--danger);box-shadow:0 0 0 4px rgba(220,38,38,0.1)}
+.cpf-error-msg{text-align:center;font-size:13px;color:var(--danger);margin-top:8px;display:none}
+.cpf-error-msg.visible{display:block}
+.cpf-submit{width:100%;padding:18px;background:var(--accent);color:#fff;font-family:var(--font-body);font-size:17px;font-weight:700;border:none;border-radius:14px;cursor:pointer;transition:all 0.25s;margin-top:16px}
+.cpf-submit:hover{background:var(--accent-dark);transform:translateY(-1px);box-shadow:0 8px 24px rgba(26,86,219,0.3)}
+.cpf-submit:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none}
+.cpf-privacy{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:16px;font-size:13px;color:var(--text-dim)}
+.cpf-privacy svg{width:14px;height:14px;color:var(--accent);flex-shrink:0}
+.cpf-checks{margin-top:28px}
+.cpf-check-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--border-light);opacity:0.3;transition:opacity 0.5s ease}
+.cpf-check-item.active{opacity:1}.cpf-check-item.done{opacity:1}
+.cpf-check-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;transition:all 0.3s}
+.cpf-check-item:not(.done) .cpf-check-icon{border:2px solid var(--border);background:transparent;color:transparent}
+.cpf-check-item.active:not(.done) .cpf-check-icon{border-color:var(--accent);background:transparent;animation:spinnerPulse 1s infinite}
+.cpf-check-item.active:not(.done) .cpf-check-icon::after{content:'';width:10px;height:10px;border:2px solid var(--accent);border-top-color:transparent;border-radius:50%;animation:spinnerRotate 0.8s linear infinite}
+.cpf-check-item.done .cpf-check-icon{background:#16a34a;border:none;color:#fff}
+.cpf-check-item.done .cpf-check-icon::after{content:'\2713';font-size:14px;font-weight:700;animation:none}
+.cpf-check-text{font-size:16px;color:var(--text-secondary);font-weight:500}
+.cpf-check-item.done .cpf-check-text{color:var(--text)}
+.cpf-counter-bar{margin-top:28px;padding:16px 20px;background:var(--danger-light);border:1px solid rgba(220,38,38,0.12);border-radius:12px;text-align:center;font-size:15px;color:var(--text-secondary);opacity:0;transition:opacity 0.5s}
+.cpf-counter-bar.visible{opacity:1}
+.cpf-counter-bar strong{color:var(--danger);font-size:18px;font-weight:800}
+@keyframes spinnerRotate{to{transform:rotate(360deg)}}
+@keyframes spinnerPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,86,219,0.2)}50%{box-shadow:0 0 0 8px rgba(26,86,219,0)}}
+.cpf-result-status{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:12px;margin:0 auto 24px;width:fit-content;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em}
+.cpf-result-status.danger{background:var(--danger-light);color:var(--danger);border:1px solid rgba(220,38,38,0.2)}
+.cpf-result-status .status-dot{width:10px;height:10px;border-radius:50%;background:var(--danger);animation:dangerPulse 1.5s infinite}
+@keyframes dangerPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(220,38,38,0.4)}50%{opacity:0.6;box-shadow:0 0 0 6px rgba(220,38,38,0)}}
+.cpf-result-cpf{text-align:center;font-size:22px;font-weight:700;color:var(--text);letter-spacing:0.04em;margin-bottom:20px;font-family:var(--font-display)}
+.cpf-result-msg{text-align:center;font-size:16px;color:var(--text-secondary);line-height:1.65;margin-bottom:32px;max-width:420px;margin-left:auto;margin-right:auto}
+.cpf-result-msg strong{color:var(--text)}
+.cpf-result-price{text-align:center;margin-bottom:20px}
+.cpf-result-price .price-value{font-family:var(--font-display);font-size:40px;font-weight:900;color:var(--accent);line-height:1}
+.cpf-result-price .price-value span{font-size:18px;font-weight:600;color:var(--text-muted)}
+.cpf-result-btn{display:block;width:100%;padding:20px;background:var(--accent);color:#fff;font-family:var(--font-body);font-size:18px;font-weight:700;border:none;border-radius:14px;cursor:pointer;text-decoration:none;text-align:center;transition:all 0.25s}
+.cpf-result-btn:hover{background:var(--accent-dark);transform:translateY(-1px);box-shadow:0 8px 24px rgba(26,86,219,0.3)}
+.cpf-result-btn:disabled{opacity:0.6;cursor:not-allowed;transform:none;box-shadow:none}
+.cpf-result-guarantees{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px;font-size:13px;color:var(--text-muted);flex-wrap:wrap}
+.cpf-result-guarantees span{display:flex;align-items:center;gap:4px}
+.cpf-result-solution{background:var(--bg-alt);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:28px}
+.cpf-solution-title{font-size:20px;font-weight:800;color:var(--text);margin-bottom:24px;text-align:center}
+.cpf-solution-list{list-style:none;padding:0;margin:0;width:100%}
+.cpf-solution-list li{font-size:16px;color:var(--text);font-weight:500;padding:10px 0;display:flex;align-items:center;gap:12px;line-height:1.5;border-bottom:1px solid var(--border-light)}
+.cpf-solution-list li:last-child{border-bottom:none}
+.cpf-solution-list li::before{content:'\2713';color:#fff;background:#16a34a;font-weight:700;font-size:12px;flex-shrink:0;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.qr-wrap{background:var(--bg-alt);border:1px solid var(--border);border-radius:16px;padding:20px;text-align:center;margin-bottom:20px}
+.qr-wrap img{width:200px;height:200px;border-radius:8px;margin:0 auto 12px;display:block}
+.qr-label{font-size:13px;color:var(--text-muted);margin-bottom:12px}
+.copy-btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent-light);color:var(--accent);border:1px solid rgba(26,86,219,0.2);border-radius:10px;padding:10px 16px;font-family:var(--font-body);font-size:14px;font-weight:600;cursor:pointer;transition:all 0.2s;width:100%;justify-content:center}
+.copy-btn:hover{background:#dce8fb}
+.copy-btn.copied{background:var(--success-light);color:var(--success);border-color:rgba(22,163,74,0.3)}
+.pix-waiting{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;padding:12px;background:var(--accent-light);border-radius:10px;font-size:14px;font-weight:600;color:var(--accent)}
+.pix-waiting .dot-pulse{display:flex;gap:4px}
+.pix-waiting .dot-pulse span{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:dotPulse 1.4s infinite}
+.pix-waiting .dot-pulse span:nth-child(2){animation-delay:0.2s}
+.pix-waiting .dot-pulse span:nth-child(3){animation-delay:0.4s}
+@keyframes dotPulse{0%,80%,100%{opacity:0.3;transform:scale(0.8)}40%{opacity:1;transform:scale(1)}}
+.success-steps{background:var(--bg-alt);border:1px solid var(--border);border-radius:16px;padding:20px;margin-top:20px}
+.success-steps-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:12px;text-align:center}
+.success-steps-list{list-style:none;padding:0;margin:0}
+.success-step-num{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.success-steps-list li{display:flex;align-items:flex-start;gap:14px;padding:10px 0;border-bottom:1px solid var(--border-light);font-size:14px;color:var(--text-secondary);line-height:1.5}
+.success-steps-list li:last-child{border-bottom:none}
+.success-steps-list li strong{color:var(--text)}
+.pix-error{text-align:center;font-size:14px;color:var(--danger);margin-top:12px;display:none}
+.pix-error.visible{display:block}
+.prog-field{max-height:0;opacity:0;overflow:hidden;margin-bottom:0;transition:max-height 0.4s ease,opacity 0.35s ease,margin-bottom 0.35s ease}
+.prog-field.visible{max-height:120px;opacity:1;margin-bottom:14px}
+.prog-label{font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.prog-input{width:100%;padding:12px 14px;font-family:var(--font-body);font-size:15px;font-weight:500;border:2px solid var(--border);border-radius:12px;outline:none;transition:all 0.25s;color:var(--text);background:var(--bg-alt)}
+.prog-input:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 4px rgba(26,86,219,0.1)}
+.prog-input::placeholder{color:var(--text-dim);font-weight:400}
+/* Checkout Asaas-style */
+.ck-header{margin-bottom:31px;padding-top:4px}
+.ck-header h3{font-size:21px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.3}
+.ck-header .ck-price{font-size:16px;font-weight:700;color:var(--accent)}
+.ck-header .ck-price .ck-period{font-size:13px;font-weight:400;color:var(--text-secondary)}
+.ck-section{margin-bottom:31px}
+.ck-section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:18px}
+.ck-section-title svg{width:20px;height:20px;color:var(--text-muted)}
+.ck-field{margin-bottom:20px}
+.ck-field label{display:block;font-size:13.5px;font-weight:500;color:var(--text);margin-bottom:6px}
+.ck-field input{width:100%;padding:12px 14px;font-family:var(--font-body);font-size:16px;font-weight:400;border:1px solid #d1d5db;border-radius:8px;outline:none;transition:all 0.2s;color:var(--text);background:#fff}
+.ck-field input:focus{border-color:#9ca3af;box-shadow:none}
+.ck-field input::placeholder{color:#c0c4cc}
+.ck-field input.error{border-color:var(--danger)}
+.ck-field .ck-phone-wrap.error{border-color:var(--danger)}
+.ck-field .ck-phone-wrap{display:flex;align-items:center;gap:0;border:1px solid #d1d5db;border-radius:8px;overflow:hidden;transition:all 0.2s}
+.ck-field .ck-phone-wrap:focus-within{border-color:#9ca3af;box-shadow:none}
+.ck-field .ck-phone-prefix{display:flex;align-items:center;gap:4px;padding:12px 12px 12px 14px;font-size:15px;color:var(--text-secondary);background:#fafafa;border-right:1px solid var(--border);white-space:nowrap;flex-shrink:0}
+.ck-field .ck-phone-prefix span{font-size:16px}
+.ck-field .ck-phone-wrap input{border:none;border-radius:0;padding:12px 14px;box-shadow:none}
+.ck-field .ck-phone-wrap input:focus{box-shadow:none}
+.ck-pay-methods{display:flex;gap:10px;margin-bottom:21px}
+.ck-pay-method{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:18px 10px;cursor:pointer;border:1px solid #d1d5db;border-radius:12px;transition:all 0.2s;background:#f5f7fa}
+.ck-pay-method.active{border-color:#1e293b;background:#1e293b;border-radius:12px}
+.ck-pay-method.active span{color:#fff}
+.ck-pay-method svg,.ck-pay-method img{width:28px;height:28px}
+.ck-pay-method span{font-size:12px;font-weight:600;color:var(--text-secondary);text-align:center}
+.ck-pix-benefits{border:2px dashed #16a34a;border-radius:12px;padding:16px 18px;margin-bottom:25px}
+.ck-pix-benefits li{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text-secondary);line-height:1.4;margin-bottom:10px;list-style:none}
+.ck-pix-benefits li:last-child{margin-bottom:0}
+.ck-pix-benefits li .ck-check{width:18px;height:18px;border-radius:50%;background:#16a34a;color:#fff;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.ck-summary{border-top:1px solid #e5e7eb;padding-top:20px;margin-bottom:24px}
+.ck-summary-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:14px}
+.ck-summary-row{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--text-secondary);margin-bottom:12px}
+.ck-summary-total{display:flex;justify-content:space-between;align-items:center;font-size:16px;font-weight:700;color:var(--text);padding-top:12px;border-top:1px solid #e5e7eb}
+.ck-card-fields{display:none;margin-bottom:20px}
+.ck-card-fields.visible{display:block}
+.ck-card-row{display:flex;gap:12px}
+.ck-card-row .ck-field{flex:1}
+.ck-submit{width:100%;padding:18px;background:var(--accent);color:#fff;font-family:var(--font-body);font-size:16px;font-weight:700;border:none;border-radius:14px;cursor:pointer;transition:all 0.2s}
+.ck-submit:hover{background:var(--accent-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,86,219,0.3)}
+.ck-submit:disabled{opacity:0.5;cursor:not-allowed;transform:none;box-shadow:none}
+/* Fullscreen mode for Step 7 */
+.cpf-modal.fullscreen{background:#f0f2f5;padding:0}
+.cpf-modal.fullscreen .cpf-modal-box{max-width:100%;width:100%;max-height:100vh;height:100%;border-radius:16px 16px 0 0;box-shadow:0 -2px 20px rgba(0,0,0,0.06);padding:28px 22px;transform:none;margin-top:6px;background:#fff;overflow-y:auto}
+.cpf-modal.fullscreen .cpf-modal-close{display:none}
+@media(min-width:601px){.cpf-modal.fullscreen .cpf-modal-box{max-width:480px;margin:6px auto 0;border-radius:16px}}
+@media(max-width:600px){
+  .cpf-modal-box{padding:28px 20px;border-radius:20px;max-height:95vh}
+  .cpf-step h2{font-size:20px}
+  .cpf-input{font-size:18px;padding:16px}
+  .cpf-result-status{padding:10px 18px;margin-bottom:12px;font-size:14px}
+  .cpf-result-cpf{font-size:18px;margin-bottom:12px}
+  .cpf-result-msg{font-size:15px;margin-bottom:20px}
+  .cpf-result-solution{padding:16px;margin-bottom:20px}
+  .cpf-solution-title{font-size:17px;margin-bottom:16px}
+  .cpf-result-price .price-value{font-size:34px}
+  .cpf-result-guarantees{margin-top:10px;font-size:12px}
+  .cpf-step-icon{width:48px;height:48px;margin-bottom:16px;font-size:22px}
+  .qr-wrap img{width:160px;height:160px}
+}
+</style>
 </head>
 <body>
-  <div class="card">
 
-    <!-- Headline -->
-    <h1>1 toque,<br><span style="color:#25D366">documento assinado</span></h1>
+<section class="hero">
+  <img src="/radar.webp" alt="Exemplo de alerta do Radar Jurídico no WhatsApp" loading="eager">
+  <div>
+    <button class="cta-btn" onclick="openCpfModal()">
+      Monitorar CPF
+    </button>
+  </div>
+</section>
 
-    <!-- Mockup -->
-    <div class="mockup">
-      <img src="https://raw.githubusercontent.com/arthuruspro/assinezap/main/demonstracao.webp" alt="Demonstração do AssineZap: contrato sendo assinado pelo WhatsApp com um toque" />
-    </div>
+<footer></footer>
 
-    <!-- Benefits -->
-    <ul class="benefits">
-      <li><span class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1DAA62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V6a2 2 0 0 1 4 0v5"/><path d="M13 11V9a2 2 0 0 1 4 0v2"/><path d="M17 11a2 2 0 0 1 4 0v3a8 8 0 0 1-8 8H9a8 8 0 0 1-8-8v-1a2 2 0 0 1 4 0"/></svg></span> Seu cliente assina com 1 toque</li>
-      <li><span class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1DAA62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span> Sem sair do WhatsApp</li>
-      <li><span class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1DAA62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></span> Certificado com validade jurídica</li>
-      <li><span class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1DAA62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span> Envie documentos ilimitados</li>
-    </ul>
+<!-- MODAL -->
+<div class="cpf-modal" id="cpfModal">
+<div class="cpf-modal-box">
 
-    <!-- CTA -->
-    <a id="checkoutLink" href="https://pay.cakto.com.br/mnzezip_790248" style="text-decoration:none;" onclick="handleCheckout(event, this);">
-      <button class="btn">Teste por R$49<span style="font-size:14px;font-weight:400;opacity:0.95;">/mês</span></button>
-    </a>
+<!-- STEP 1: Apenas CPF -->
+<div class="cpf-step" id="cpfStep1">
+<h2>Digite o CPF:</h2>
+<div class="cpf-input-wrap">
+<input type="text" class="cpf-input" id="cpfInput" placeholder="000.000.000-00" maxlength="14" inputmode="numeric" autocomplete="off">
+<p class="cpf-error-msg" id="cpfError">Digite um CPF válido com 11 dígitos</p>
+</div>
+<button class="cpf-submit" id="cpfSubmitBtn" onclick="startAnalysis()">Continuar</button>
+<div class="cpf-privacy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="m7 11V7a5 5 0 0 1 10 0v4"/></svg> Seus dados estão protegidos</div>
+</div>
 
+<!-- STEP 2: Animação análise -->
+<div class="cpf-step" id="cpfStep2">
+<h2>Analisando CPF...</h2>
+<div class="cpf-checks">
+<div class="cpf-check-item" id="check2"><div class="cpf-check-icon"></div><div class="cpf-check-text">Consultando 91 tribunais do Brasil...</div></div>
+<div id="problemAlert" style="display:none;align-items:center;gap:10px;margin:6px 0 2px 0;padding:10px 14px;background:#fef2f2;border:1px solid rgba(220,38,38,0.18);border-radius:10px;opacity:0;transition:opacity 0.5s ease;">
+  <span style="font-size:17px;">&#9888;&#65039;</span>
+  <span style="font-size:14px;font-weight:700;color:#dc2626;"><span id="problemCount">0</span> problemas encontrados no CPF</span>
+</div>
+</div>
+</div>
+
+<!-- STEP 5: Resultado perigo -->
+<div class="cpf-step" id="cpfStep5">
+<div class="cpf-result-status danger"><div class="status-dot"></div> Este CPF não possui monitoramento ativo. </div>
+<p class="cpf-result-msg">Se alguém te processar, você descobrirá tarde demais — com <strong style="color:#df0101">conta bloqueada, nome sujo, multas ou até risco de prisão</strong>.</p>
+<button class="cpf-result-btn" onclick="showStep(6)" style="background:var(--danger);">Ver como se proteger</button>
+</div>
+
+<!-- STEP 6: Preço + botão "Teste por 7 dias" -->
+<div class="cpf-step" id="cpfStep6">
+<div class="cpf-solution-title" style="margin-top:24px;">Ative o<br>Monitoramento Processual 24h</div>
+<div class="cpf-result-solution">
+  <div class="cpf-result-price" style="margin-bottom:20px;">
+    <div class="price-value">R$ 147<span>/mês</span></div>
+  </div>
+  <ul class="cpf-solution-list">
+    <li>Monitoramento automático 24h</li>
+    <li>Alerta imediato no WhatsApp</li>
+    <li>Todo tipo de processo</li>
+  </ul>
+  <button class="cpf-result-btn" onclick="showStep(7)" style="margin-top:20px;">Teste por 7 dias</button>
+</div>
+</div>
+
+<!-- STEP 7: Checkout estilo Asaas -->
+<div class="cpf-step" id="cpfStep7">
+
+  <!-- Header do produto -->
+  <div class="ck-header">
+    <h3>Monitoramento Processual 24h</h3>
+    <div class="ck-price">R$ 147,00 <span class="ck-period">/ mês</span></div>
   </div>
 
-  <script>
-    function handleCheckout(e, el) {
-      e.preventDefault();
-      try { fbq('trackSingle', '1961787600889582', 'InitiateCheckout'); } catch(err) {}
-      setTimeout(function() {
-        window.location.href = el.href;
-      }, 300);
+  <!-- Seus dados -->
+  <div class="ck-section">
+    <div class="ck-section-title">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Seus dados
+    </div>
+    <div class="ck-field">
+      <label>Nome completo</label>
+      <input type="text" id="ckNome" placeholder="Preencha seu nome" autocomplete="name">
+    </div>
+    <div class="ck-field">
+      <label>Email</label>
+      <input type="email" id="ckEmail" placeholder="Preencha seu email" autocomplete="email">
+    </div>
+    <div class="ck-field">
+      <label>CPF ou CNPJ a ser monitorado</label>
+      <input type="text" id="ckCpfCnpj" placeholder="Preencha seu CPF ou CNPJ" maxlength="18" inputmode="numeric" autocomplete="off">
+    </div>
+    <div class="ck-field">
+      <label>Celular</label>
+      <div class="ck-phone-wrap">
+        <div class="ck-phone-prefix"><span>🇧🇷</span>▾ +55</div>
+        <input type="text" id="ckCelular" placeholder="" maxlength="15" inputmode="numeric" autocomplete="tel">
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagamento -->
+  <div class="ck-section">
+    <div class="ck-section-title">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      Pagamento
+    </div>
+
+    <div class="ck-pay-methods">
+      <div class="ck-pay-method" id="ckMethodCard" onclick="selectPayMethod('card')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <span>Cartão de Crédito</span>
+      </div>
+      <div class="ck-pay-method active" id="ckMethodPix" onclick="selectPayMethod('pix')">
+        <svg width="32" height="32" viewBox="0 0 512 512" fill="#ffffff"><path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C256.1 224.4 247.9 224.5 242.4 218.9L165.7 142.2C151.5 127.1 132.6 120.2 112.6 120.2H103.3L200.7 22.76C231.1-7.586 280.3-7.586 310.6 22.76L407.8 119.9H392.6C372.6 119.9 353.7 127.7 339.5 141.9L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 252.5 245.6C261.9 245.6 271.3 241.1 278.5 234.8L355.5 157.8C365.3 148.1 378.8 142.5 392.6 142.5H430.3L488.6 200.8C518.9 231.1 518.9 280.3 488.6 310.6L430.3 368.9H392.6C378.8 368.9 365.3 363.3 355.5 353.5L278.5 276.5C264.6 262.6 240.3 262.6 226.4 276.6L149.7 353.2C139.1 363 126.4 368.6 112.6 368.6H80.78L22.76 310.6C-7.586 280.3-7.586 231.1 22.76 200.8L80.78 142.7H112.6z"/></svg>
+        <span>Pix Automático</span>
+      </div>
+    </div>
+
+    <!-- Campos do cartão (ocultos por padrão) -->
+    <div class="ck-card-fields" id="ckCardFields">
+      <div class="ck-field">
+        <label>Número do cartão</label>
+        <input type="text" id="ckCardNumber" placeholder="0000 0000 0000 0000" maxlength="19" inputmode="numeric" autocomplete="cc-number">
+      </div>
+      <div class="ck-card-row">
+        <div class="ck-field">
+          <label>Validade</label>
+          <input type="text" id="ckCardExpiry" placeholder="MM/AA" maxlength="5" inputmode="numeric" autocomplete="cc-exp">
+        </div>
+        <div class="ck-field">
+          <label>CVV</label>
+          <input type="text" id="ckCardCvv" placeholder="000" maxlength="4" inputmode="numeric" autocomplete="cc-csc">
+        </div>
+      </div>
+    </div>
+
+    <!-- Benefits do PIX (visíveis por padrão) -->
+    <ul class="ck-pix-benefits" id="ckPixBenefits">
+      <li><span class="ck-check">✓</span> Liberação imediata</li>
+      <li><span class="ck-check">✓</span> Assinatura sempre em dia</li>
+      <li><span class="ck-check">✓</span> Com o Pix Automático, as renovações são feitas de forma recorrente, sem preocupação</li>
+      <li><span class="ck-check">✓</span> Autorize uma vez o pagamento no app do seu banco e os próximos a gente cuida para você</li>
+    </ul>
+  </div>
+
+  <!-- Resumo do pedido -->
+  <div class="ck-summary">
+    <div class="ck-summary-title">Resumo do pedido</div>
+    <div class="ck-summary-row"><span>Monitoramento Processual 24h</span><span>R$ 147,00</span></div>
+    <div class="ck-summary-total"><span>Total</span><span>R$ 147,00</span></div>
+  </div>
+
+  <button class="ck-submit" id="checkoutBtn" onclick="handleCheckout()">Pagar com Pix Automático</button>
+  <p class="pix-error" id="pixError"></p>
+  <div style="height:60px"></div>
+
+</div>
+
+<!-- STEP 8: QR Code PIX + polling -->
+<div class="cpf-step" id="cpfStep8">
+<h2>Quase lá!</h2>
+<p class="cpf-desc">Escaneie o QR Code com o app do seu banco</p>
+<div class="qr-wrap">
+  <img id="qrCodeImg" src="" alt="QR Code PIX">
+  <p class="qr-label">Ou copie o código PIX:</p>
+  <button class="copy-btn" id="copyBtn" onclick="copyCodigo()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+    Copiar código PIX
+  </button>
+</div>
+<div class="pix-waiting" id="pixWaiting">
+  Aguardando pagamento
+  <div class="dot-pulse"><span></span><span></span><span></span></div>
+</div>
+<div class="success-steps">
+  <div class="success-steps-title">Como pagar:</div>
+  <ol class="success-steps-list">
+    <li><div class="success-step-num">1</div><div>Abra o <strong>app do seu banco</strong></div></li>
+    <li><div class="success-step-num">2</div><div>Escolha <strong>pagar com PIX</strong> e escaneie o QR Code</div></li>
+    <li><div class="success-step-num">3</div><div>Confirme o pagamento de <strong>R$147,00</strong></div></li>
+    <li><div class="success-step-num">4</div><div>Pronto! Seu monitoramento será ativado <strong>automaticamente</strong></div></li>
+  </ol>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+// ===== CONFIG =====
+const SUPABASE_URL = 'https://tppswustlduttskozhkk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwcHN3dXN0bGR1dHRza296aGtrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MjExMzIsImV4cCI6MjA4ODA5NzEzMn0.5IjWnMnZwJ-pmpPr0I3hxYZrfR8q_9vk0jH7DYTArqA';
+
+// ===== TRACKING HELPERS =====
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return match ? decodeURIComponent(match[2]) : '';
+}
+function generateEventId() {
+  return 'eid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 9);
+}
+function getTrackingData() {
+  return {
+    fbp: getCookie('_fbp'),
+    fbc: getCookie('_fbc') || (new URLSearchParams(window.location.search).get('fbclid') ? 'fb.1.' + Date.now() + '.' + new URLSearchParams(window.location.search).get('fbclid') : ''),
+    event_source_url: window.location.href,
+    user_agent: navigator.userAgent,
+  };
+}
+
+// ===== ESTADO =====
+const cpfModal = document.getElementById('cpfModal');
+const cpfInput = document.getElementById('cpfInput');
+const cpfError = document.getElementById('cpfError');
+let rawCpf = '';
+let rawWpp = '';
+let currentAuthId = '';
+let pixPayload = '';
+let pollInterval = null;
+let pollCount = 0;
+const MAX_POLLS = 360; // 30 minutos
+let selectedPayMethod = 'pix'; // 'pix' ou 'card'
+
+// ===== MODAL =====
+function openCpfModal() { cpfModal.classList.add('active'); document.body.style.overflow = 'hidden'; showStep(1); }
+function closeCpfModal() { cpfModal.classList.remove('active'); document.body.style.overflow = ''; if (pollInterval) clearInterval(pollInterval); }
+cpfModal.addEventListener('click', e => { if (e.target === cpfModal) closeCpfModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && cpfModal.classList.contains('active')) closeCpfModal(); });
+
+function showStep(n) {
+  document.querySelectorAll('.cpf-step').forEach(s => s.classList.remove('active'));
+  document.getElementById('cpfStep' + n).classList.add('active');
+  document.querySelector('.cpf-modal-box').scrollTop = 0;
+  // Fullscreen para Step 7 e 8
+  if (n === 7 || n === 8) { cpfModal.classList.add('fullscreen'); } else { cpfModal.classList.remove('fullscreen'); }
+  // Pre-preencher CPF no checkout
+  if (n === 7 && rawCpf) {
+    const el = document.getElementById('ckCpfCnpj');
+    if (el && !el.value) {
+      let v = rawCpf;
+      if (v.length === 11) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+      el.value = v;
     }
-  </script>
+  }
+}
+
+// ===== VALIDAÇÃO CPF =====
+function validateCpf(cpf) {
+  cpf = cpf.replace(/\D/g, '');
+  if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) return false;
+  let sum = 0;
+  for (let i = 0; i < 9; i++) sum += parseInt(cpf[i]) * (10 - i);
+  let d1 = 11 - (sum % 11); if (d1 >= 10) d1 = 0;
+  if (parseInt(cpf[9]) !== d1) return false;
+  sum = 0;
+  for (let i = 0; i < 10; i++) sum += parseInt(cpf[i]) * (11 - i);
+  let d2 = 11 - (sum % 11); if (d2 >= 10) d2 = 0;
+  return parseInt(cpf[10]) === d2;
+}
+
+// ===== MÁSCARAS =====
+cpfInput.addEventListener('input', e => {
+  let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+  if (v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+  else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+  else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+  e.target.value = v;
+  cpfError.classList.remove('visible');
+  cpfInput.classList.remove('error');
+});
+
+cpfInput.addEventListener('keydown', e => { if (e.key === 'Enter') startAnalysis(); });
+
+// Máscara CPF/CNPJ do checkout
+document.getElementById('ckCpfCnpj').addEventListener('input', e => {
+  let v = e.target.value.replace(/\D/g, '');
+  if (v.length <= 11) {
+    v = v.slice(0, 11);
+    if (v.length > 9) v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+    else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+    else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+  } else {
+    v = v.slice(0, 14);
+    v = v.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{0,2})/, '$1.$2.$3/$4-$5');
+  }
+  e.target.value = v;
+});
+
+// Máscara Celular do checkout — mostra ( desde o primeiro dígito
+document.getElementById('ckCelular').addEventListener('input', e => {
+  let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+  if (v.length > 6) v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+  else if (v.length > 2) v = v.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+  else if (v.length >= 1) v = '(' + v;
+  e.target.value = v;
+});
+
+// ===== ANÁLISE =====
+function startAnalysis() {
+  rawCpf = cpfInput.value.replace(/\D/g, '');
+
+  if (!validateCpf(rawCpf)) {
+    cpfInput.classList.add('error');
+    cpfError.classList.add('visible');
+    return;
+  }
+
+  showStep(2);
+  document.querySelectorAll('.cpf-check-item').forEach(el => el.classList.remove('active', 'done'));
+
+  const checks = [
+    { id: 'check2', activeDelay: 300, doneDelay: 5000, doneText: '91 tribunais consultados \u2713' },
+  ];
+  checks.forEach(c => {
+    setTimeout(() => { document.getElementById(c.id).classList.add('active'); }, c.activeDelay);
+    setTimeout(() => {
+      const el = document.getElementById(c.id);
+      el.classList.add('done');
+      el.querySelector('.cpf-check-text').textContent = c.doneText;
+      if (c.id === 'check2') {
+        document.getElementById('problemCount').textContent = 3;
+        const pa = document.getElementById('problemAlert');
+        pa.style.display = 'flex';
+        requestAnimationFrame(() => requestAnimationFrame(() => { pa.style.opacity = '1'; }));
+      }
+    }, c.doneDelay);
+  });
+  setTimeout(() => { showStep(5); }, 7000);
+}
+
+// ===== TOGGLE CARTÃO / PIX =====
+function selectPayMethod(method) {
+  selectedPayMethod = method;
+  const cardBtn = document.getElementById('ckMethodCard');
+  const pixBtn = document.getElementById('ckMethodPix');
+  const cardFields = document.getElementById('ckCardFields');
+  const pixBenefits = document.getElementById('ckPixBenefits');
+  const submitBtn = document.getElementById('checkoutBtn');
+  if (method === 'card') {
+    cardBtn.classList.add('active');
+    pixBtn.classList.remove('active');
+    cardFields.classList.add('visible');
+    pixBenefits.style.display = 'none';
+    submitBtn.textContent = 'Assinar com Cartão de Crédito';
+    // Fix SVG colors
+    cardBtn.querySelector('svg').setAttribute('stroke', '#ffffff');
+    pixBtn.querySelector('svg').setAttribute('fill', '#6b7280');
+  } else {
+    pixBtn.classList.add('active');
+    cardBtn.classList.remove('active');
+    cardFields.classList.remove('visible');
+    pixBenefits.style.display = '';
+    submitBtn.textContent = 'Pagar com Pix Automático';
+    pixBtn.querySelector('svg').setAttribute('fill', '#ffffff');
+    cardBtn.querySelector('svg').setAttribute('stroke', '#6b7280');
+  }
+}
+
+// ===== MÁSCARAS CARTÃO =====
+document.getElementById('ckCardNumber')?.addEventListener('input', function(e) {
+  let v = e.target.value.replace(/\D/g, '').slice(0, 16);
+  v = v.replace(/(\d{4})(?=\d)/g, '$1 ');
+  e.target.value = v;
+});
+document.getElementById('ckCardExpiry')?.addEventListener('input', function(e) {
+  let v = e.target.value.replace(/\D/g, '').slice(0, 4);
+  if (v.length > 2) v = v.slice(0, 2) + '/' + v.slice(2);
+  e.target.value = v;
+});
+document.getElementById('ckCardCvv')?.addEventListener('input', function(e) {
+  e.target.value = e.target.value.replace(/\D/g, '').slice(0, 4);
+});
+
+// Remove erro ao digitar nos campos do cartão
+['ckCardNumber','ckCardExpiry','ckCardCvv'].forEach(id => {
+  document.getElementById(id)?.addEventListener('input', function(){ this.classList.remove('error'); document.getElementById('pixError').classList.remove('visible'); });
+});
+
+// ===== CHECKOUT =====
+// Remove erro ao digitar
+['ckNome','ckEmail','ckCpfCnpj'].forEach(id => {
+  document.getElementById(id)?.addEventListener('input', function(){ this.classList.remove('error'); document.getElementById('pixError').classList.remove('visible'); });
+});
+document.getElementById('ckCelular')?.addEventListener('input', function(){ this.closest('.ck-phone-wrap')?.classList.remove('error'); document.getElementById('pixError').classList.remove('visible'); });
+
+async function handleCheckout() {
+  const btn = document.getElementById('checkoutBtn');
+  const errorEl = document.getElementById('pixError');
+  errorEl.classList.remove('visible');
+
+  // Pegar valores dos campos
+  const nome = document.getElementById('ckNome').value.trim();
+  const email = document.getElementById('ckEmail').value.trim();
+  const cpfCnpj = document.getElementById('ckCpfCnpj').value.replace(/\D/g, '');
+  const celular = document.getElementById('ckCelular').value.replace(/\D/g, '');
+
+  // Validações
+  if (!nome) { document.getElementById('ckNome').classList.add('error'); errorEl.textContent = 'Preencha seu nome'; errorEl.classList.add('visible'); return; }
+  document.getElementById('ckNome').classList.remove('error');
+  if (!email || !email.includes('@')) { document.getElementById('ckEmail').classList.add('error'); errorEl.textContent = 'Preencha um email válido'; errorEl.classList.add('visible'); return; }
+  document.getElementById('ckEmail').classList.remove('error');
+  if (cpfCnpj.length < 11) { document.getElementById('ckCpfCnpj').classList.add('error'); errorEl.textContent = 'Preencha seu CPF/CNPJ'; errorEl.classList.add('visible'); return; }
+  document.getElementById('ckCpfCnpj').classList.remove('error');
+  if (celular.length < 10) { document.getElementById('ckCelular').closest('.ck-phone-wrap')?.classList.add('error'); errorEl.textContent = 'Preencha seu celular'; errorEl.classList.add('visible'); return; }
+
+  // Usar CPF do checkout ou o digitado no Step 1
+  rawWpp = celular;
+  if (cpfCnpj.length >= 11) rawCpf = cpfCnpj;
+
+  // Validações extras para cartão
+  if (selectedPayMethod === 'card') {
+    const cardNum = document.getElementById('ckCardNumber').value.replace(/\D/g, '');
+    const cardExp = document.getElementById('ckCardExpiry').value;
+    const cardCvv = document.getElementById('ckCardCvv').value.replace(/\D/g, '');
+
+    if (cardNum.length < 13) { document.getElementById('ckCardNumber').classList.add('error'); errorEl.textContent = 'Número do cartão inválido'; errorEl.classList.add('visible'); return; }
+    if (!cardExp || cardExp.length < 5) { document.getElementById('ckCardExpiry').classList.add('error'); errorEl.textContent = 'Validade inválida'; errorEl.classList.add('visible'); return; }
+    if (cardCvv.length < 3) { document.getElementById('ckCardCvv').classList.add('error'); errorEl.textContent = 'CVV inválido'; errorEl.classList.add('visible'); return; }
+  }
+
+  // Gerar event_ids e tracking
+  const tracking = getTrackingData();
+  const eventIdIC = generateEventId();
+  const eventIdPurchase = generateEventId();
+
+  // InitiateCheckout com event_id para deduplicação
+  if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', { value: 147, currency: 'BRL' }, { eventID: eventIdIC });
+
+  btn.disabled = true;
+
+  // Coletar UTMs
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmData = {};
+  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(k => {
+    if (urlParams.get(k)) utmData[k] = urlParams.get(k);
+  });
+
+  if (selectedPayMethod === 'card') {
+    // === FLUXO CARTÃO ===
+    btn.textContent = 'Processando...';
+    const expParts = document.getElementById('ckCardExpiry').value.split('/');
+
+    try {
+      const res = await fetch(SUPABASE_URL + '/functions/v1/radar-juridico-asaas-criar-assinatura-cartao', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+          'apikey': SUPABASE_ANON_KEY,
+        },
+        body: JSON.stringify({
+          cpf: rawCpf,
+          whatsapp: rawWpp,
+          nome: nome,
+          email: email,
+          utm: Object.keys(utmData).length > 0 ? utmData : undefined,
+          creditCard: {
+            holderName: nome,
+            number: document.getElementById('ckCardNumber').value.replace(/\D/g, ''),
+            expiryMonth: expParts[0],
+            expiryYear: expParts[1],
+            ccv: document.getElementById('ckCardCvv').value.replace(/\D/g, ''),
+          },
+          postalCode: '01001000',
+          addressNumber: '1',
+          fbp: tracking.fbp,
+          fbc: tracking.fbc,
+          event_id_ic: eventIdIC,
+          event_id_purchase: eventIdPurchase,
+          event_source_url: tracking.event_source_url,
+          user_agent: tracking.user_agent,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao processar cartão');
+
+      // Sucesso! Conversion tracking com event_id para deduplicação
+      if (typeof fbq !== 'undefined') fbq('track', 'Purchase', { value: 147, currency: 'BRL' }, { eventID: eventIdPurchase });
+      if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-11225982551/purchase', value: 147, currency: 'BRL' });
+
+      // Mostrar Step 8 adaptado (sucesso cartão)
+      showStep(8);
+      document.querySelector('#cpfStep8 h2').textContent = 'Assinatura ativada!';
+      document.querySelector('#cpfStep8 .cpf-desc').textContent = 'Seu cartão foi aprovado com sucesso.';
+      document.querySelector('.qr-wrap').style.display = 'none';
+      document.querySelector('.success-steps').style.display = 'none';
+      document.getElementById('pixWaiting').innerHTML = '<span style="color:var(--success);font-weight:700">✅ Pagamento confirmado! Redirecionando...</span>';
+      setTimeout(() => { window.location.href = 'https://radar-juridico.com/remocao'; }, 2000);
+
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = 'Assinar com Cartão de Crédito';
+      errorEl.textContent = err.message || 'Erro ao processar cartão. Tente novamente.';
+      errorEl.classList.add('visible');
+    }
+  } else {
+    // === FLUXO PIX (original) ===
+    btn.textContent = 'Gerando PIX...';
+
+    try {
+      const res = await fetch(SUPABASE_URL + '/functions/v1/radar-juridico-asaas-gerar-pix', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+          'apikey': SUPABASE_ANON_KEY,
+        },
+        body: JSON.stringify({
+          cpf: rawCpf,
+          whatsapp: rawWpp,
+          nome: nome,
+          email: email,
+          utm: Object.keys(utmData).length > 0 ? utmData : undefined,
+          fbp: tracking.fbp,
+          fbc: tracking.fbc,
+          event_id: eventIdIC,
+          event_source_url: tracking.event_source_url,
+          user_agent: tracking.user_agent,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao gerar PIX');
+
+      document.getElementById('qrCodeImg').src = 'data:image/png;base64,' + data.qrCodeImage;
+      pixPayload = data.qrCodeText;
+      currentAuthId = data.authorizationId;
+      // Salvar eventIdPurchase para usar no polling
+      window._pixEventIdPurchase = eventIdPurchase;
+
+      // Restaurar Step 8 pra modo PIX
+      document.querySelector('#cpfStep8 h2').textContent = 'Quase lá!';
+      document.querySelector('#cpfStep8 .cpf-desc').textContent = 'Escaneie o QR Code com o app do seu banco';
+      document.querySelector('.qr-wrap').style.display = '';
+      document.querySelector('.success-steps').style.display = '';
+      document.getElementById('pixWaiting').innerHTML = 'Aguardando pagamento<div class="dot-pulse"><span></span><span></span><span></span></div>';
+
+      showStep(8);
+      startPaymentPolling();
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = 'Pagar com Pix Automático';
+      errorEl.textContent = err.message || 'Erro ao gerar PIX. Tente novamente.';
+      errorEl.classList.add('visible');
+    }
+  }
+}
+
+// ===== COPIAR CÓDIGO PIX =====
+function copyCodigo() {
+  const btn = document.getElementById('copyBtn');
+  navigator.clipboard.writeText(pixPayload).then(() => {
+    btn.classList.add('copied');
+    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copiar código PIX';
+    }, 3000);
+  });
+}
+
+// ===== POLLING PAGAMENTO =====
+function startPaymentPolling() {
+  pollCount = 0;
+  pollInterval = setInterval(async () => {
+    pollCount++;
+    if (pollCount >= MAX_POLLS) {
+      clearInterval(pollInterval);
+      document.getElementById('pixWaiting').innerHTML = '<span style="color:var(--danger)">QR Code expirado. Recarregue a página para tentar novamente.</span>';
+      return;
+    }
+    try {
+      const res = await fetch(SUPABASE_URL + '/functions/v1/radar-juridico-asaas-verificar-pagamento', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+          'apikey': SUPABASE_ANON_KEY,
+        },
+        body: JSON.stringify({ authorizationId: currentAuthId, event_id: window._pixEventIdPurchase }),
+      });
+      const data = await res.json();
+      if (data.active) {
+        clearInterval(pollInterval);
+        if (typeof fbq !== 'undefined') fbq('track', 'Purchase', { value: 147, currency: 'BRL' }, { eventID: window._pixEventIdPurchase });
+        if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-11225982551/purchase', value: 147, currency: 'BRL' });
+        document.getElementById('pixWaiting').innerHTML = '<span style="color:var(--success);font-weight:700">\u2705 Pagamento confirmado! Redirecionando...</span>';
+        setTimeout(() => { window.location.href = 'https://radar-juridico.com/remocao'; }, 2000);
+      }
+    } catch (err) {
+      console.error('Polling error:', err);
+    }
+  }, 5000);
+}
+</script>
 </body>
 </html>
